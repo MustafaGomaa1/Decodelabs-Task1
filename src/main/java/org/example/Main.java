@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
         boolean wantToPlay = true;
@@ -17,7 +17,7 @@ public class Main {
             while (wantToPlay) {
                 attempt = 10;
                 hiddenNumber = random.nextInt(1, 100);
-                System.out.println("Gess The Hidden Number :(*note: you have only " + attempt + " Attempts)");
+                System.out.println("Guess The Hidden Number :(*note: you have only " + attempt + " Attempts)");
                 for (int i = attempt; i > 0; i--) {
                     userInput = sc.nextInt();
                     if (userInput == hiddenNumber) {
@@ -62,5 +62,6 @@ public class Main {
         } catch (Exception ex) {
             System.out.println("Invalid Input Type");
         }
+        sc.close();
     }
 }
