@@ -1,3 +1,6 @@
+Number Guessing Game
+A Java-based console application where players try to guess a randomly generated hidden number. The game provides real-time feedback on whether the guess is too high or too low, making for an engaging CLI experience. This project was developed as a technical task for the DecodeLab internship.
+
 🚀 Features
 Random Number Generation: Dynamically generates a secret number within a specified range (e.g., 1 to 100) for every new game.
 
